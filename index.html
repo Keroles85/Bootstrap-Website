@@ -3,10 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/script.js"></script>
   <title>Bootstrap WebSite</title>
 </head>
 <body>
-  
+
+  <!---- Navigation ---->
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <div class="container-fluid">
+
+      <a href="#" class="navbar-brand" title="logo"><img src="img/logo.png" alt="logo" id="img-logo">
+        <!-- <span id="logo-span">Bootstrap-Website</span> -->
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Featured</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-user-circle" style="font-size: 1.2em;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!---- Image Slider ---->
+  <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide1.jpg" alt="">
+        <div class="carousel-caption">
+          <h1 class="display-2">Bootstrap</h1>
+          <h3>Complete Website layout</h3>
+          <button class="btn btn-outline-light btn-lg">
+            View Demo
+          </button>
+          <button class="btn btn-primary btn-lg">
+            View More
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide2.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!---- Jumbotron  ---->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit sint itaque tenetur reprehenderit ipsum temporibus rem! Modi impedit eaque laborum quod quidem corporis rem. Similique voluptatem itaque sed maiores.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+          <a href="#"><button class="btn btn-outline-secondary bt-lg">View more</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---- Welcome Section ---->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Technologies used in this website</h1>
+      </div>
+      <hr>
+      <div class="col-12">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsam sed quibusdam vel optio dolore quos pariatur fuga esse dignissimos id ea voluptatem totam eaque at perferendis, similique unde tempora!</p>
+      </div>
+    </div>
+  </div>
+
+  <!---- Three Column Section ---->
+  <div class="coding container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <i class="fas fa-code"></i>
+        <h3>HTML5</h3>
+        <p>Built with latest version of HTML, HTML5.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <i class="fas fa-bold"></i>
+        <h3>Bootstrap</h3>
+        <p>Built with latest version of Bootstrap, v4.3.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <i class="fab fa-css3"></i>
+        <h3>CSS3</h3>
+        <p>Built with latest version of CSS, CSS3.</p>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <i class="fab fa-sass"></i>
+        <h3>Sass</h3>
+        <p>Built with CSS Preprocessor Sass.</p>
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+
+  <!---- Two Column with Image  ---->
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6">
+        <h2>Building a complete website using Bootstrap...</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius autem, alias distinctio ullam error, commodi ducimus ab numquam quae tenetur incidunt accusamus perferendis pariatur quibusdam. Natus sit fugiat eos maiores!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, ipsum. Quasi unde odio libero incidunt! Sunt quos, cumque iste aspernatur minima, labore repellat incidunt ducimus consectetur, perspiciatis non et placeat.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/computer-1343393.jpg" alt="" class="img-fluid img-thumbnail">
+      </div>
+    </div>
+  </div>
+
+  <!---- Fixed Background  ---->
+  <!-- <figure>
+    <div class="fixed-wrap">
+      <div id="fixed">
+          <div id="overlay"></div>
+      </div>
+    </div>
+  </figure> -->
+  <div class="parallax">
+    <div id="overlay"></div>
+  </div>
+
+  <!---- Hidden Features Section  ---->
+  <div class="features container text-center">
+    <h3>Click for features</h3>
+    <button class="btn-feat" data-toggle="collapse" data-target="#hidden-feat"></button>
+  </div>
+
+  <div id="hidden-feat" class="collapse">
+    <div class="container-fluid padding">
+      <div class="row text-center">  <!-- Row div begin -->
+        <div class="col-12">
+          <h1 class="display-4">Featured Options</h1>
+          <hr>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/card1.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Option 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis quia quaerat sed tempora, nostrum ipsam illum beatae consequatur reprehenderit.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/card2.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Option 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis quia quaerat sed tempora, nostrum ipsam illum beatae consequatur reprehenderit.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/card3.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Option 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis quia quaerat sed tempora, nostrum ipsam illum beatae consequatur reprehenderit.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- row div end -->
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <!---- Contact Section ---->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2 style="margin: 5rem 0 3rem 0;">Contact Us</h2>
+      </div>
+      <div class="col-12 social padding">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!---- Footer Section ---->
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          &copy; Keroles Bootstrap Website 2019
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

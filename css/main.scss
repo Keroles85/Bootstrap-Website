@@ -1,0 +1,257 @@
+//include button animation
+@import '_button';
+
+//variables
+$navbar-bg: #f3f3f3;
+$body-bg: #e0e0e0;
+
+//mixins
+@mixin box-shadow($h, $v, $blur, $color) {
+  -webkit-box-shadow: $h $v $blur $color;
+  -moz-box-shadow: $h $v $blur $color;
+  box-shadow: $h $v $blur $color;
+}
+
+//body section
+body, html {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #222;
+  //background-color: $body-bg;
+}
+
+//main padding class
+.padding {
+  padding-bottom: 2rem;
+}
+
+//navbar section
+.navbar {
+  background-color: $navbar-bg;
+  border-bottom: 1px solid #e3e3e3;
+  @include box-shadow(0, 1px, 5px, rgba(0,0,0,0.3));
+
+  #img-logo {
+    max-width: (734px / 11);
+  }
+
+  li {
+    padding-right: 1rem;
+
+    .nav-link {
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+//carousel section
+.carousel-inner {
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    h1 {
+      font-size: 500%;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 20px rgba(0,0,0,0.75);
+    }
+
+    h3 {
+      font-size: 200%;
+      font-weight: 500;
+      text-shadow: 2px 2px 20px rgba(0,0,0,0.75);
+      padding-bottom: 1rem;
+    }
+
+
+  }
+}
+
+//jumbotron section
+.jumbotron {
+  padding: 1.1rem;
+}
+
+//welcome section
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+
+  hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+  }
+}
+
+//three column code section
+.coding {
+  .fa-code {
+    color: #e54d26;
+  }
+
+  .fa-bold {
+    color: #563d7c;
+  }
+
+  .fa-css3 {
+    color: #2163af;
+  }
+
+  .fa-sass {
+    color: #c6538c;
+  }
+
+  .fa-code, .fa-bold, .fa-css3, .fa-sass {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+}
+
+//fixed wallpaper
+/*figure {
+position: relative;
+width: 100%;
+height: 60%;
+margin: 0!important;
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  #fixed {
+    background-image: url('../img/background.jpg');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+  }
+}
+}*/
+.parallax {
+/* The image used */
+background-image: url("../img/background.jpg");
+
+/* Set a specific height */
+min-height: 500px; 
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: inset 0 0 0 400px rgba(0,0,0,0.5);
+}
+
+
+//hidden feature section
+.features {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .btn {
+    border-radius: 50%;
+  }
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+#hidden-feat {
+  hr {
+    width: 60%;
+    border-top: 2px solid #b4b4b4;
+    margin-bottom: 2rem;
+  }
+}
+
+//social media contact section
+.social {
+
+  a {
+    font-size: 3rem;
+    padding: 3rem;
+
+    .fa-facebook {
+      color: #3b5998;
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+
+    .fa-twitter {
+      color: #00aced;
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+
+    .fa-youtube {
+      color: #bb0000;
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+
+    .fa-instagram {
+      color: #517fa4;
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+
+    .fa-linkedin {
+      color: #4875b4;
+      &:hover {
+        color: #d5d5d5;
+      }
+    }
+  }
+}
+
+//footer section
+footer {
+  background-color: #474b47;
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+//media queries section
+// Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) { 
+  
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (max-width: 768px) { 
+  
+// }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+  .social {
+    a {
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  }
+}
